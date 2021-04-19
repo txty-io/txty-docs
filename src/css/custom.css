@@ -7,19 +7,80 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #568aea;
+  --ifm-color-primary-dark: #3a76e6;
+  --ifm-color-primary-darker: #2b6ce5;
+  --ifm-color-primary-darkest: #1956c7;
+  --ifm-color-primary-light: #729eee;
+  --ifm-color-primary-lighter: #81a8ef;
+  --ifm-color-primary-lightest: #abc5f5;
   --ifm-code-font-size: 95%;
+
+  --ifm-navbar-background-color: #101727;
+  --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-hover-color: #61b6ff;
+  --ifm-footer-link-hover-color: #61b6ff;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #61b6ff;
+  --ifm-color-primary-dark: #3ea6ff;
+  --ifm-color-primary-darker: #2c9eff;
+  --ifm-color-primary-darkest: #0085f6;
+  --ifm-color-primary-light: #84c6ff;
+  --ifm-color-primary-lighter: #96ceff;
+  --ifm-color-primary-lightest: #cbe7ff;
+
+  --ifm-toc-border-color: #ffffff20;
+  --ifm-background-color: #101727;
+}
+
+.admonition {
+  --ra-admonition-icon-color: #fff;
+}
+
+.admonition-icon {
+  margin-right: 12px;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.alert--info {
+  --ifm-alert-background-color: #0a396d;
+  --ifm-alert-border-color: #0a396d;
+  color: #fff;
+}
+
+.alert--info a {
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: 1px solid #ffffff20;
+}
+
+.navbar__title {
+  color: #fff;
+  margin-left: 12px;
+}
+
+.container img {
+  max-height: 400px;
+}
+
+.footer {
+  background-color: #101727;
+  border-top: 1px solid #ffffff20;
+}
+
+.footer__link-item {
+  text-decoration: none !important;
+}
+
+.footer__bottom {
+  margin-top: 56px;
 }
