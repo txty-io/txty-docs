@@ -7,7 +7,7 @@ slug: /
 
 ## What is Texterify?
 
-Texterify is a localization management platform that makes it super easy to translate your app, website and other software into multiple languages. It helps to translate Our goal is to make software localization as easy as possible. Texterify is available as a cloud solution, managed by the people who built it (sign up [here](https://app.texterify.com/signup)), but you can also host it on-premise in your own infrastructure so you are not dependent on others. Texterify is a best fit for every situation.
+Texterify is a localization management platform, or often also called translation management system (TMS), that makes it super easy to translate your app, website and other software into multiple languages. Our goal is to make software localization as easy as possible. Manage all your translations in one single place. Texterify is available as a cloud solution, managed by the people who built it (sign up [here](https://app.texterify.com/signup)), but you can also host it on-premise in your own infrastructure so you are not dependent on others. Texterify is a best fit for every situation.
 
 If you ever miss a feature or have problems with something just create a GitHub issue [here](https://github.com/texterify/texterify/issues) or send us an email to <support@texterify.com>. We are here to help and look forward to your feedback.
 

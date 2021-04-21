@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Texterify: Documentation',
+  title: 'Texterify',
   tagline: 'Learn how to use Texterify.',
   url: 'https://texterify.com',
   baseUrl: '/',

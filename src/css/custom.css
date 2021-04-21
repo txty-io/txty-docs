@@ -55,7 +55,17 @@ html[data-theme='dark'] {
   color: #fff;
 }
 
+.alert--warning {
+  --ifm-alert-background-color: #f7ab00;
+  --ifm-alert-border-color: #f7ab00;
+  color: #fff;
+}
+
 .alert--info a {
+  color: #fff;
+}
+
+.alert--warning a {
   color: #fff;
 }
 
