@@ -73,6 +73,10 @@ html[data-theme='dark'] {
   border-bottom: 1px solid #ffffff20;
 }
 
+.navbar__toggle {
+  color: #fff;
+}
+
 .navbar__title {
   color: #fff;
   margin-left: 12px;
