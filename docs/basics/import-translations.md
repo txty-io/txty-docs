@@ -7,7 +7,8 @@ You should now have a project set up with at least one language. We will now imp
 
 Select the language for which you are uploading the translations and then drop your file with your translations. Currently the following formats for importing translations are supported:
 
-- JSON (with format `<key>: <translation>`)
+- JSON Flat (with format `<key>: <translation>`)
+- JSON Format.js (with format `<key>: { defaultMessage: "<message>", description: "<description>" }`)
 - iOS .strings files
 
 We are currently working on adding further import formats. If you are missing a format you need please just create a GitHub issue [here](https://github.com/texterify/texterify/issues) or send us an email to <support@texterify.com>.
