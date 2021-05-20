@@ -14,7 +14,7 @@ module.exports = {
       title: 'Texterify',
       logo: {
         alt: 'Texterify Logo',
-        src: 'img/white_logo.png',
+        src: 'img/logo_white.png',
       },
       items: [
         {
