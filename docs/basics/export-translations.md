@@ -13,7 +13,7 @@ Texterify aims to offer full flexibility so you can adjust Texterify according t
 
 Before you can download your translations you first need to [create an export configuration](#configurations). After you have created an export config a download button will be shown so you can easily download your translation bundle.
 
-You can also download translations by using our [CLI](/tools/cli) tool.
+<!-- You can also download translations by using our [CLI](/tools/cli) tool. -->
 
 ## Configurations
 
