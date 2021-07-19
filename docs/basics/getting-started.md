@@ -35,6 +35,7 @@ Learn the basics of how to use Texterify:
 Level up your localization process with the following features:
 
 - [Dark mode](advanced/dark-mode)
+- [Machine translation](advanced/machine-translation)
 
 ## Integration guides
 
