@@ -190,11 +190,11 @@ Texterify does all the handling around machine translation for you, but the text
     <tr>
         <td>DEEPL_API_TOKEN</td>
         <td></td>
-        <td>If you want to use machine translation you need to create an account on [www.deepl.com](https://www.deepl.com) and set your API token here.</td>
+        <td>If you want to use machine translation you need to create an account on <a href="https://www.deepl.com" target="_blank">www.deepl.com</a> and set your API token here.</td>
     </tr>
 </table>
 
-### Over the air
+### Over the air translations
 
 The over the air feature works by hosting the translation files on the Google Cloud. If you need to make use of this feature you will have to [create a storage bucket](https://cloud.google.com/storage/docs/creating-buckets) and configure it:
 
