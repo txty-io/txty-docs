@@ -1,5 +1,6 @@
 ---
 title: Installation
+sidebar_position: 0
 ---
 
 :::info
@@ -10,8 +11,14 @@ This guide covers the installation and configuration of the on-premise (self hos
 
 ## Requirements
 
+Tools:
 - docker
 - docker-compose
+
+Accounts/Servers:
+- Email server or email provider account (optional but recommended)
+- DeepL account (optional)
+- Google Cloud Account (optional)
 
 ## Starting the service
 
@@ -86,7 +93,7 @@ The table below gives an overview of things you can configure in your Texterify 
     <tr>
         <td>DB_PROD_DATABASE</td>
         <td>texterify_production</td>
-        <td>The name your database.</td>
+        <td>The name of your database.</td>
     </tr>
     <tr>
         <td>DB_PROD_PASSWORD</td>
@@ -101,7 +108,7 @@ Texterify makes use of some external services. Below you find instructions on ho
 
 ### E-Mail
 
-You need to configure an email server so Texterify can send emails (e.g. password forgot emails). Make use the following configuration options to integrate your mail server or provider:
+You need to configure a mail server so Texterify can send emails (e.g. password forgot emails). Make use of the following configuration options to integrate your mail server or provider:
 
 <table>
     <tr>
@@ -155,7 +162,7 @@ You need to configure an email server so Texterify can send emails (e.g. passwor
         <td>SMTP_OPENSSL_VERIFY_MODE</td>
         <td></td>
         <td>
-            When you use TLS you can define how OpenSSL checks the certificate. Choose on of the following if needed:
+            When you use TLS you can define how OpenSSL checks the certificate. Choose one of the following if needed:
             <ul>
                 <li><b>none</b></li>
                 <li><b>peer</b></li>
@@ -205,7 +212,7 @@ The over the air feature works by hosting the translation files on the Google Cl
     <tr>
         <td>GOOGLE_CLOUD_KEYFILE</td>
         <td></td>
-        <td>The Google Cloud key file used for authentication. See [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) for more information.</td>
+        <td>The Google Cloud key file used for authentication. See <a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys" target="_blank">here</a> for more information.</td>
     </tr>
     <tr>
         <td>GOOGLE_CLOUD_OTA_BUCKET_NAME</td>
@@ -213,3 +220,14 @@ The over the air feature works by hosting the translation files on the Google Cl
         <td>The name of the bucket used for storing the translation bundles.</td>
     </tr>
 </table>
+
+## Debugging
+
+If you experience any issues you can always check the logs of the application which might give a hint about the issue you are currently facing. To view the logs start the app and then execute the following commands:
+
+```shell
+docker exec -it texterify-docker-compose-setup_app_1 /bin/sh
+cat log/production.log
+```
+
+This will give you the logs of the application server.
