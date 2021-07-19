@@ -14,28 +14,21 @@ If you ever miss a feature or have problems with something just create a GitHub 
 
 :::info
 
-We offer a super clean dark mode in Texterify that can be activated/deactivated anytime. Learn more [here](/advanced/dark-mode) on how to activate it. You can also toggle the dark mode of the docs you are currently reading in the upper right corner.
+We offer a super clean dark mode in Texterify that can be activated/deactivated anytime. Learn more [here](/dark-mode) on how to activate it. You can also toggle the dark mode of the docs you are currently reading in the upper right corner.
 
 :::
 
-## Basics
+Learn how to use Texterify:
 
-Learn the basics of how to use Texterify:
-
-- [Create an account](basics/create-account)
-- [Create an organization](basics/create-organization)
-- [Create a project](basics/create-project)
-- [Add languages](basics/add-languages)
-- [Import translations](basics/import-translations)
-- [Add keys](basics/add-keys)
-- [Translate your content](basics/translate-content)
-
-## Advanced
-
-Level up your localization process with the following features:
-
-- [Dark mode](advanced/dark-mode)
-- [Machine translation](advanced/machine-translation)
+- [Create an account](create-account)
+- [Create an organization](create-organization)
+- [Create a project](create-project)
+- [Add languages](add-languages)
+- [Import translations](import-translations)
+- [Add keys](add-keys)
+- [Translate your content](translate-content)
+- [Machine translation](machine-translation)
+- [Dark mode](dark-mode)
 
 <!-- ## Integration guides
 

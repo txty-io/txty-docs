@@ -7,7 +7,7 @@ Keys (or often also called string ids or just ids in the context of localization
 
 When you import translations for a language you automatically also create keys, but you can also add keys manually. Click on `Keys` in the left sidebar and then click on `Create key`. Enter the name of the key and optionally a description to help others understand the context during translation. If you have set a default language you can also directly add a translation for that language as shown below.
 
-![Add a key](/img/basics/add_key.png)
+![Add a key](/img/general/add_key.png)
 
 ## HTML support
 

@@ -20,7 +20,7 @@ Premium features are not available for private projects
 
 To create a project click the `Create project` button on the [projects page](https://app.texterify.com/dashboard/projects).
 
-![Create a private project](/img/basics/create_project.png)
+![Create a private project](/img/general/create_project.png)
 
 Fill out the form to create your project. You can change all of this information later on so don't worry. After creating the project you will be presented with the dashboard of your new project.
 
@@ -30,6 +30,6 @@ When you create a project as part of an organzation all users automatically get 
 
 To create a project within your organization you need to first select the organization. On the organization dashboard you can create a new project by clicking `Create project`.
 
-![Create a project within an organization](/img/basics/create_project_org.png)
+![Create a project within an organization](/img/general/create_project_org.png)
 
 The steps for creating an organizational project are then the same as for private projects.

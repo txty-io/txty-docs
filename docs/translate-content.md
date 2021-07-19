@@ -19,7 +19,7 @@ You can always switch between these two views at any time.
 
 Click on `Keys` in the left sidebar to get to the keys site.
 
-![Keys view](/img/basics/translate_keys.png)
+![Keys view](/img/general/translate_keys.png)
 
 ### Editing content
 
@@ -53,7 +53,7 @@ Switching between HTML mode and non HTML mode alters the content of your transla
 
 To open the `Translation editor` go to your Overview page by clicking `Overview` in the left sidebar and then click on `Open editor`.
 
-![Translation editor](/img/basics/translate_editor.png)
+![Translation editor](/img/general/translate_editor.png)
 
 ### Editing content
 

@@ -9,4 +9,4 @@ To create an organization click [here](https://app.texterify.com/dashboard/organ
 
 You will automatically be redirected to the organization dashboard where you can create projects, invites users or manage you subscription settings (only in the cloud version).
 
-![Create an organization](/img/basics/create_organization.png)
+![Create an organization](/img/general/create_organization.png)

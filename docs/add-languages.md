@@ -11,4 +11,4 @@ By clicking on `Default language` you mark the language as the default language 
 
 Then click `Create language` to create a new language.
 
-![Add a language](/img/basics/add_language.png)
+![Add a language](/img/general/add_language.png)
