@@ -37,7 +37,7 @@ Level up your localization process with the following features:
 - [Dark mode](advanced/dark-mode)
 - [Machine translation](advanced/machine-translation)
 
-## Integration guides
+<!-- ## Integration guides
 
 If you are already feeling comfortable using Texterify check out our integration guides to learn how to integrate it into your software:
 
@@ -45,9 +45,9 @@ If you are already feeling comfortable using Texterify check out our integration
 - [Angular](integrations/angular)
 - [iOS](integrations/ios)
 - [React](integrations/react)
-- [Ruby on Rails](integrations/ruby-on-rails)
+- [Ruby on Rails](integrations/ruby-on-rails) -->
 
-## Tools
+<!-- ## Tools
 
 Make sure to also check out the various tools we are offering for working with Texterify:
 
@@ -55,4 +55,4 @@ Make sure to also check out the various tools we are offering for working with T
 - [API](tools/api)
 - [Node.js](tools/nodejs)
 - [Android SDK](tools/android-sdk)
-- [iOS SDK](tools/ios-sdk)
+- [iOS SDK](tools/ios-sdk) -->
