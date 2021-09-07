@@ -48,7 +48,15 @@ The service is now available at [http://localhost](http://localhost). 🎉
 
 After installation you should immediately create an account, because the first registered user on the system is the instance admin account.
 
+## Updating the service
 
+To update the service change the `TEXTERIFY_TAG` to a new version. You can then run the following commands to update Texterify to the new version:
+
+```sh
+docker-compose down
+docker-compose up
+docker-compose exec app bin/rails db:migrate db:seed
+```
 
 ## Configuration
 
@@ -99,6 +107,11 @@ The table below gives an overview of things you can configure in your Texterify 
         <td>DB_PROD_PASSWORD</td>
         <td></td>
         <td>The password of your database user if needed.</td>
+    </tr>
+    <tr>
+        <td>http_proxy</td>
+        <td></td>
+        <td>Specify a HTTP proxy for your application.</td>
     </tr>
 </table>
 
@@ -194,6 +207,13 @@ Texterify does all the handling around machine translation for you, but the text
     </tr>
 </table>
 
+
+:::info
+
+This feature requires communication outside of your network. If a proxy is required for communication you can set the proxy with the `http_proxy` environment variable.
+
+:::
+
 ### Over the air translations
 
 The over the air feature works by hosting the translation files on the Google Cloud. If you need to make use of this feature you will have to [create a storage bucket](https://cloud.google.com/storage/docs/creating-buckets) and configure it:
@@ -220,6 +240,12 @@ The over the air feature works by hosting the translation files on the Google Cl
         <td>The name of the bucket used for storing the translation bundles.</td>
     </tr>
 </table>
+
+:::info
+
+This feature requires communication outside of your network. If a proxy is required for communication you can set the proxy with the `http_proxy` environment variable.
+
+:::
 
 ## Debugging
 
