@@ -50,11 +50,16 @@ After installation you should immediately create an account, because the first r
 
 ## Updating the service
 
-To update the service change the `TEXTERIFY_TAG` to a new version. You can then run the following commands to update Texterify to the new version:
+To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to backup your database in case of a failure so no data is lost. You can then run the following commands to update Texterify to the new version:
 
 ```sh
+# Stop the current service.
 docker-compose down
+
+# Start the service which will update Texterify to the new version.
 docker-compose up
+
+# In case there are database changes apply them.
 docker-compose exec app bin/rails db:migrate db:seed
 ```
 
