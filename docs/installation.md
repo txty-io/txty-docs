@@ -56,7 +56,7 @@ After installation you should immediately create an account, because the first r
 
 To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to backup your database so no data is lost in case of a failure. You can then run the following commands to update Texterify to the new version:
 
-```sh
+```shell
 # Stop the current service.
 docker-compose down
 
