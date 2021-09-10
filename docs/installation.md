@@ -46,7 +46,7 @@ docker-compose up --always-recreate-deps
 docker-compose exec app bin/rails db:create db:migrate db:seed
 ```
 
-The service is now available at [http://localhost](http://localhost). 🎉
+The service is now available at [http://localhost](http://localhost) (or whatever you have set your `APP_HOST` to). 🎉
 
 ## Creating the admin account
 
