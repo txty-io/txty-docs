@@ -33,10 +33,12 @@ cd texterify-docker-compose-setup
 # Make sure to keep this private.
 echo SECRET_KEY_BASE=`openssl rand -hex 64` > secrets.env
 
+# Open the .env file and replace "example.com" with your host (if you are trying to run Texterify locally just use "localhost" as host). Also make sure to check out the other configuration options (see below).
+
 # Start the service.
 docker volume create --name=texterify-database
 docker volume create --name=texterify-assets
-docker-compose up
+docker-compose up --always-recreate-deps
 
 # After everything has started create the database in another terminal.
 docker-compose exec app bin/rails db:create db:migrate db:seed
@@ -56,8 +58,12 @@ To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to 
 # Stop the current service.
 docker-compose down
 
+# Get the latest changes to the docker-compose setup (https://github.com/texterify/texterify-docker-compose-setup.git).
+git pull
+docker-compose build
+
 # Start the service which will update Texterify to the new version.
-docker-compose up
+docker-compose up --always-recreate-deps
 
 # In case there are database changes apply them.
 docker-compose exec app bin/rails db:migrate db:seed
