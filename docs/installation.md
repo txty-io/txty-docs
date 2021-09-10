@@ -60,7 +60,8 @@ To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to 
 # Stop the current service.
 docker-compose down
 
-# Get the latest changes to the docker-compose setup (https://github.com/texterify/texterify-docker-compose-setup.git).
+# Get the latest changes to the docker-compose setup.
+# See https://github.com/texterify/texterify-docker-compose-setup for changes.
 git pull
 docker-compose build
 
