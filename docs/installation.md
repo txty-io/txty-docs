@@ -33,7 +33,9 @@ cd texterify-docker-compose-setup
 # Make sure to keep this private.
 echo SECRET_KEY_BASE=`openssl rand -hex 64` > secrets.env
 
-# Open the .env file and replace "example.com" with your host (if you are trying to run Texterify locally just use "localhost" as host). Also make sure to check out the other configuration options (see below).
+# Open the .env file and replace "example.com" with your host (if you
+# are trying to run Texterify locally just use "localhost" as host).
+# Also make sure to check out the other configuration options (see below).
 
 # Start the service.
 docker volume create --name=texterify-database
