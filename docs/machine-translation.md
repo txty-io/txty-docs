@@ -24,7 +24,7 @@ To translate all text from your default language to an other language click on `
 
 ## Automatic machine translation
 
-Go to the project machine translation site and click on the `Settings` tab. Activate `Automatically translate new keys` to automatically translate new keys when they are added. If the
+Go to the project machine translation site and click on the `Settings` tab. Activate `Automatically translate new keys` to automatically translate new keys when they are added.
 
 ## Supported languages
 
