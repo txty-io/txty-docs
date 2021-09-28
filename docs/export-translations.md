@@ -19,7 +19,7 @@ Before you can download your translations you first need to [create an export co
 
 An `Export Configuration` defines how your translations are exported. You can define the file format and the file names dynamically based on the language and country code of a language. You can also define multiple export configurations to export your translations for different targets. This is for example very useful if you develop an Android and an iOS application which should use the same translations. In this situation you can export your translations to Android and iOS easily in their required formats und don't need to manage those translations seperately.
 
-To create an export configuration click on `Create new`. Give your export configuration a name and select a file format
+To create an export configuration click on `Create new`. Give your export configuration a name and select a file format.
 
 ## Hierarchy
 

@@ -67,4 +67,4 @@ This feature is a paid feature and is only available in some paid plans or durin
 
 :::
 
-When you select a key the history of the translations for this key are shown on the right. By selecting a language in the history view you can filter only for changes of a certain language.
+When you select a key the history of the translations for this key is shown on the right. By selecting a language in the history view you can filter only for changes of a certain language.
