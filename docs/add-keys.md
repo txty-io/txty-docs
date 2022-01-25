@@ -11,7 +11,7 @@ When you import translations for a language you automatically also create keys, 
 
 ## HTML support
 
-You can also mark the key as an `HTML` key. By settings this option translators will be presented with a WYSIWYG (short for "what you see is what you get") editor when trying to translate a HTML key. The editor offers the following features:
+You can also mark the key as an `HTML` key. By setting this option translators will be presented with a WYSIWYG (short for "what you see is what you get") editor when trying to translate a HTML key. The editor offers the following features:
 
 - Paragraphs
 - Ordered lists
