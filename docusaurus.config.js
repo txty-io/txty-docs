@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Texterify',
   tagline: 'Learn how to use Texterify.',
-  url: 'https://texterify.com',
+  url: 'https://docs.texterify.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
