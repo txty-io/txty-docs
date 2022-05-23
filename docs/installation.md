@@ -217,7 +217,7 @@ Texterify does all the handling around machine translation for you, but the text
     <tr>
         <td>DEEPL_API_TOKEN</td>
         <td></td>
-        <td>If you want to use machine translation you need to create an account on <a href="https://www.deepl.com" target="_blank">www.deepl.com</a> and set your API token here.</td>
+        <td>If you want to use machine translation you need to create an account on <a href="https://www.deepl.com/translator" target="_blank">www.deepl.com</a> and set your API token here.</td>
     </tr>
 </table>
 
