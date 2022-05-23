@@ -89,12 +89,12 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/texterify/texterify-docs/edit/master/website/',
+            'https://github.com/texterify/texterify-docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/texterify/texterify-docs/edit/master/website/blog/',
+            'https://github.com/texterify/texterify-docs/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
