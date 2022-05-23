@@ -9,6 +9,7 @@ module.exports = {
   favicon: 'img/favicon/favicon.ico',
   organizationName: 'texterify', // Usually your GitHub org/user name.
   projectName: 'texterify-docs', // Usually your repo name.
+  trailingSlash: false,
   themeConfig: {
     navbar: {
       title: 'Texterify',
