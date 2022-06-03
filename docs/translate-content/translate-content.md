@@ -1,6 +1,8 @@
 ---
 sidebar_position: 8
 title: Translate your content
+collapsed: false
+
 ---
 
 Translating your content in Texterify is super easy. We offer two different ways how you can edit your translations:

@@ -52,9 +52,10 @@ html[data-theme='dark'] {
 }
 
 .alert--warning {
-  --ifm-alert-background-color: #f7ab00;
-  --ifm-alert-border-color: #f7ab00;
+  --ifm-alert-background-color: #d86406;
+  --ifm-alert-border-color: #d86406;
   --ifm-color-info-contrast-foreground: #fff;
+  --ifm-alert-foreground-color: #fff;
 }
 
 .alert--info a {

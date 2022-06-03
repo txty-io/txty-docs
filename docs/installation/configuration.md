@@ -1,78 +1,9 @@
 ---
-title: Installation
-sidebar_position: 0
+title: Configuration
+sidebar_position: 1
 ---
 
-:::info
-
-This guide covers the installation and configuration of the on-premise (self hosting) version of Texterify. If you are using the cloud version you can ignore this installation instructions, because all of the things are already covered by the Texterify team for you.
-
-:::
-
-## Requirements
-
-Tools:
-- docker
-- docker-compose
-
-Accounts/Servers:
-- Email server or email provider account (optional but recommended)
-- DeepL account (optional)
-- Google Cloud Account (optional)
-
-## Starting the service
-
-To get you up as easy as possible run the following commands to get a complete docker-compose setup up and running:
-
-```shell
-# Clone the docker-compose configuration.
-git clone https://github.com/texterify/texterify-docker-compose-setup.git
-cd texterify-docker-compose-setup
-
-# Generate a secret key for the app.
-# Make sure to keep this private.
-echo SECRET_KEY_BASE=`openssl rand -hex 64` > secrets.env
-
-# Open the .env file and replace "example.com" with your host (if you
-# are trying to run Texterify locally just use "localhost" as host).
-# Also make sure to check out the other configuration options (see below).
-
-# Start the service.
-docker volume create --name=texterify-database
-docker volume create --name=texterify-assets
-docker-compose up --always-recreate-deps
-
-# After everything has started create the database in another terminal.
-docker-compose exec app bin/rails db:create db:migrate db:seed
-```
-
-The service is now available at [http://localhost](http://localhost) (or whatever you have set your `APP_HOST` to). 🎉
-
-## Creating the admin account
-
-After installation you should immediately create an account, because the first registered user on the system is the instance admin account.
-
-## Updating the service
-
-To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to backup your database so no data is lost in case of a failure. You can then run the following commands to update Texterify to the new version:
-
-```shell
-# Stop the current service.
-docker-compose down
-
-# Get the latest changes to the docker-compose setup.
-# See https://github.com/texterify/texterify-docker-compose-setup for changes.
-git pull
-docker-compose build
-
-# Start the service which will update Texterify to the new version.
-docker-compose up --always-recreate-deps
-
-# In case there are database changes apply them.
-docker-compose exec app bin/rails db:migrate db:seed
-```
-
-## Configuration
+# Configuration
 
 The table below gives an overview of things you can configure in your Texterify instance. Make sure to also check out the `.env` file.
 
@@ -131,11 +62,11 @@ The table below gives an overview of things you can configure in your Texterify 
     </tbody>
 </table>
 
-## External services
+# External services
 
 Texterify makes use of some external services. Below you find instructions on how to configure them.
 
-### E-Mail
+## E-Mail
 
 You need to configure a mail server so Texterify can send emails (e.g. password forgot emails). Make use of the following configuration options to integrate your mail server or provider:
 
@@ -207,7 +138,7 @@ You need to configure a mail server so Texterify can send emails (e.g. password 
     </tbody>
 </table>
 
-### Machine translation
+## Machine translation
 
 Texterify does all the handling around machine translation for you, but the text is finally translated by DeepL. Therefore if you want to use machine translation you need to configure DeepL:
 
@@ -234,7 +165,7 @@ This feature requires communication outside of your network. If a proxy is requi
 
 :::
 
-### Over the air translations
+## Over the air translations
 
 The over the air feature works by hosting the translation files on the Google Cloud. If you need to make use of this feature you will have to [create a storage bucket](https://cloud.google.com/storage/docs/creating-buckets) and configure it:
 
@@ -268,14 +199,3 @@ The over the air feature works by hosting the translation files on the Google Cl
 This feature requires communication outside of your network. If a proxy is required for communication you can set the proxy with the `http_proxy` environment variable.
 
 :::
-
-## Debugging
-
-If you experience any issues you can always check the logs of the application which might give a hint about the issue you are currently facing. To view the logs start the app and then execute the following commands:
-
-```shell
-docker exec -it texterify-docker-compose-setup_app_1 /bin/sh
-cat log/production.log
-```
-
-This will give you the logs of the application server.

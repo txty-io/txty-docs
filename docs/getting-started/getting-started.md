@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Getting started
 slug: /
+collapsed: false
 ---
 
 
@@ -18,7 +19,7 @@ We offer a super clean dark mode in Texterify that can be activated/deactivated 
 
 :::
 
-Learn how to use Texterify:
+<!-- Learn how to use Texterify:
 
 - [Create an account](create-account)
 - [Create an organization](create-organization)
@@ -28,7 +29,7 @@ Learn how to use Texterify:
 - [Add keys](add-keys)
 - [Translate your content](translate-content)
 - [Machine translation](machine-translation)
-- [Dark mode](dark-mode)
+- [Dark mode](dark-mode) -->
 
 <!-- ## Integration guides
 

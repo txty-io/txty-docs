@@ -3,8 +3,13 @@ sidebar_position: 13
 title: Development
 ---
 
-This guide covers basic development tasks. If you need custom development for you or your company contact <sales@texterify.com>.
+This guide covers basic development tasks.
 
+:::info
+
+If you need custom development for you or your company contact <sales@texterify.com>.
+
+:::
 ## Restoring a database backup locally
 
 - Download and store the backup somewhere on your machine
