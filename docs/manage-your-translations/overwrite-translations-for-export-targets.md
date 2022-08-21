@@ -1,6 +1,6 @@
 ---
 title: Overwrite translations for export targets
-sidebar_position: 1
+sidebar_position: 100
 ---
 
 Aside from adding translations for languages you can also add translations for the combination of language and export target.

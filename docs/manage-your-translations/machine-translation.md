@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
 title: Machine translation
+sidebar_position: 15
 ---
 
 Machine translation (MT) is the automatic translation of text from one language to another. With the help of machine translation it is super easy to translate your software into multiple languages within seconds. Because Texterify has built-in machine translation support translating into multiple languages is a no-brainer.

@@ -20,6 +20,9 @@
   --ifm-navbar-link-color: #fff;
   --ifm-navbar-link-hover-color: #61b6ff;
   --ifm-footer-link-hover-color: #61b6ff;
+
+  --ifm-menu-link-padding-horizontal: 2rem;
+  --ifm-h1-font-size: 2rem;
 }
 
 html[data-theme='dark'] {
@@ -33,6 +36,18 @@ html[data-theme='dark'] {
 
   --ifm-toc-border-color: #ffffff20;
   --ifm-background-color: #101727;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2rem;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+
+nav.theme-doc-breadcrumbs {
+  margin-bottom: 1.6rem;
 }
 
 .admonition-icon {
@@ -90,6 +105,10 @@ html[data-theme='dark'] {
 
 .navbar-sidebar .menu__link {
   color: #dadde1;
+}
+
+.menu__link {
+  font-size: 14px;
 }
 
 .navbar-sidebar .menu__link:hover {

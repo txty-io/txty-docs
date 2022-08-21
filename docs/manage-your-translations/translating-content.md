@@ -1,7 +1,6 @@
 ---
-sidebar_position: 8
-title: Translate your content
-collapsed: false
+title: Translating content
+sidebar_position: 10
 
 ---
 
@@ -35,21 +34,13 @@ By clicking on the language labels above the keys table (see `1` in the image ab
 
 To view the history of a key click on the dots in the last column of the row (see `2` in the image above) and then click on `History`. By selecting a language in the history view you can filter only for changes of a certain language.
 
-### Activate/deactivate HTML content
+### Enable or disable HTML content
 
-:::info
+To toggle HTML mode of a key click on the dots in the last column of the row (see `2` in the image above) and then click on `HTML`.
 
-This feature is a paid feature and is only available in some paid plans or during the trial period. See [pricing plans](https://texterify.com/pricing) for more information.
+### Enable or disable pluralization
 
-:::
-
-To toggle HTML mode of a key click on the dots in the last column of the row (see `2` in the image above) and then click on `HTML`. If you turn off HTML mode we will automatically convert the content of the key to the HTML format at export time.
-
-:::caution
-
-Switching between HTML mode and non HTML mode alters the content of your translations because we need to convert your translations between different formats, so make sure that your translations are fine after activating/deactivating.
-
-:::
+To toggle pluralization of a key click on the dots in the last column of the row (see `2` in the image above) and then click on `Enable pluralization`.
 
 ## Translation editor
 
@@ -62,11 +53,5 @@ To open the `Translation editor` go to your Overview page by clicking `Overview`
 To translate a certain key select one on the left side of the screen. After clicking on a key the translation editor shows you two languages with fields where you can enter your translations. If you are done translating your content for a certain language click on `Save changes`. You can switch which two languages are shown next to each other by selecting a different language from the dropdown menu.
 
 ### View history
-
-:::info
-
-This feature is a paid feature and is only available in some paid plans or during the trial period. See [pricing plans](https://texterify.com/pricing) for more information.
-
-:::
 
 When you select a key the history of the translations for this key is shown on the right. By selecting a language in the history view you can filter only for changes of a certain language.
