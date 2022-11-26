@@ -15,7 +15,7 @@ If you ever miss a feature or have problems with something just create a GitHub 
 
 :::info
 
-We offer a super clean dark mode in Texterify that can be activated/deactivated anytime. Learn more [here](/dark-mode) on how to activate it. You can also toggle the dark mode of the docs you are currently reading in the upper right corner.
+We offer a super clean dark mode in Texterify that can be activated/deactivated anytime. Learn more [here](/user-account/dark-mode) on how to activate it. You can also toggle the dark mode of the docs you are currently reading in the upper right corner.
 
 :::
 
