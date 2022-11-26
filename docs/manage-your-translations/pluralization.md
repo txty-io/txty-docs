@@ -5,7 +5,7 @@ sidebar_position: 12
 
 Different languages have different pluralization rules. While for example English has one singular and one plural form ("1 cat" vs "2 cats") other languages have more forms than that. There are even languages that have only one form at all. Texterify offers you the possibility to manage all the different plural forms and export them in the correct format for your target platform.
 
-Texterify does this by following the official CLDR Plural Rules (https://cldr.unicode.org/index/cldr-spec/plural-rules). These rules are based around the following plural forms:
+Texterify does this by following the official [CLDR Plural Rules](https://cldr.unicode.org/index/cldr-spec/plural-rules). These rules are based around the following plural forms:
 
 - zero
 - one
@@ -28,6 +28,6 @@ After activation you are presented with different plural form fields to enter yo
 
 :::info
 
-The shown plural fields depends on the language code you set for your language. If you don't see the correct plural fields according to CLDR Plural Rules check if you have set the correct language code of your language.
+The shown plural fields depend on the language code you set for your language. If you don't see the correct plural fields according to [CLDR Plural Rules](https://cldr.unicode.org/index/cldr-spec/plural-rules) check if you have set the correct language code of your language.
 
 :::

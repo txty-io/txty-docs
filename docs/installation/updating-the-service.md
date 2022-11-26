@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Updating the service
 
-To update the service change the `TEXTERIFY_TAG` to a new version. Make sure to backup your database so no data is lost in case of a failure. You can then run the following commands to update Texterify to the new version:
+To update the service change the `TEXTERIFY_TAG` to a new version. For available versions see [here](https://hub.docker.com/repository/docker/chrztoph/texterify). Make sure to backup your database so no data is lost in case of a failure. You can then run the following commands to update Texterify to the new version:
 
 ```shell
 # Stop the current service.
