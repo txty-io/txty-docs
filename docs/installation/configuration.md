@@ -54,6 +54,16 @@ The table below gives an overview of things you can configure in your Texterify 
             <td></td>
             <td>Specify a HTTP proxy for your application.</td>
         </tr>
+        <tr>
+            <td>SIDEKIQ_REDIS_SERVER_URL</td>
+            <td>redis://redis:6379/0</td>
+            <td>The Sidekiq Redis server url. Learn more at <a href="https://github.com/sidekiq/sidekiq/wiki/The-Basics" target="_blank">Sidekiq basics</a> and <a href="https://github.com/sidekiq/sidekiq/wiki/Using-Redis" target="_blank">Sidekiq using Redis</a>.</td>
+        </tr>
+        <tr>
+            <td>SIDEKIQ_REDIS_CLIENT_URL</td>
+            <td>redis://redis:6379/0</td>
+            <td>The Sidekiq Redis client url. Learn more at <a href="https://github.com/sidekiq/sidekiq/wiki/The-Basics" target="_blank">Sidekiq basics</a> and <a href="https://github.com/sidekiq/sidekiq/wiki/Using-Redis" target="_blank">Sidekiq using Redis</a>.</td>
+        </tr>
     </tbody>
 </table>
 
