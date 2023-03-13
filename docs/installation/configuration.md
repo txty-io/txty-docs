@@ -75,7 +75,7 @@ You need to configure a mail server so Texterify can send emails (e.g. password 
         <tr>
             <td>SMTP_FROM_EMAIL</td>
             <td>no-reply@example.com</td>
-            <td>Set the from and reply-to email of the emails (e.g. no-reply@example.com).</td>
+            <td>Set the from and reply-to email of the emails (e.g. no-reply@example.com). In previous versions only the domain could be changed via `MAILER_HOST`.</td>
         </tr>
         <tr>
             <td>SMTP_ADDRESS</td>
