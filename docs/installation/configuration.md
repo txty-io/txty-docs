@@ -15,11 +15,6 @@ The table below gives an overview of things you can configure in your Texterify 
             <th>Description</th>
         </tr>
         <tr>
-            <td>MAILER_HOST</td>
-            <td>example.com</td>
-            <td>Set the domain of the emails sent from Texterify (e.g. no-reply@example.com for the default value).</td>
-        </tr>
-        <tr>
             <td>APP_HOST</td>
             <td>example.com</td>
             <td>The fully qualified name of the web server (for example used for constructing email links).</td>
@@ -76,6 +71,11 @@ You need to configure a mail server so Texterify can send emails (e.g. password 
             <th>Name</th>
             <th>Default</th>
             <th>Description</th>
+        </tr>
+        <tr>
+            <td>SMTP_FROM_EMAIL</td>
+            <td>no-reply@example.com</td>
+            <td>Set the from and reply-to email of the emails sent from Texterify (e.g. no-reply@example.com for the default value).</td>
         </tr>
         <tr>
             <td>SMTP_ADDRESS</td>
