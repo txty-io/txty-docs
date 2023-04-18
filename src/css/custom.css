@@ -5,41 +5,151 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #568aea;
-  --ifm-color-primary-dark: #3a76e6;
-  --ifm-color-primary-darker: #2b6ce5;
-  --ifm-color-primary-darkest: #1956c7;
-  --ifm-color-primary-light: #729eee;
-  --ifm-color-primary-lighter: #81a8ef;
-  --ifm-color-primary-lightest: #abc5f5;
-  --ifm-code-font-size: 95%;
-
-  --ifm-navbar-background-color: #101727;
-  --ifm-navbar-link-color: #fff;
-  --ifm-navbar-link-hover-color: #61b6ff;
-  --ifm-footer-link-hover-color: #61b6ff;
-
-  --ifm-menu-link-padding-horizontal: 2rem;
-  --ifm-h1-font-size: 2rem;
+html[data-theme='light'] {
+  --color-full-contrast: #000;
+  --color-no-contrast: #fff;
+  --color-white: #fff;
+  --color-menu-item: rgba(0, 0, 0, 0.45);
+  --color-headlines: #000;
+  --color-text: #28313d;
+  --color-primary-100: #06101f;
+  --color-primary-300: #3a76e6;
+  --color-primary-500: #1067f1;
+  --color-primary-700: #1c70f5;
+  --color-primary-900: #3885ff;
+  --color-success: #52c41a;
+  --color-warn: #e84b00;
+  --color-error: #e84749;
+  --color-strokes: #f0f0f0;
+  --color-alert-info-background: #f0f6ff;
+  --color-alert-info-border: #bad2ff;
+  --color-alert-title: #000;
+  --color-alert-text: #000;
+  --color-warning-background: #ffb75b17;
+  --color-warning-border: #ffb75b;
+  --color-warning-title: #000;
+  --color-warning-text: #000;
+  --color-error-background: #5107115c;
+  --color-error-border: #8b2027;
+  --color-error-title: #ff1e22;
+  --color-error-text: #000;
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #61b6ff;
-  --ifm-color-primary-dark: #3ea6ff;
-  --ifm-color-primary-darker: #2c9eff;
-  --ifm-color-primary-darkest: #0085f6;
-  --ifm-color-primary-light: #84c6ff;
-  --ifm-color-primary-lighter: #96ceff;
-  --ifm-color-primary-lightest: #cbe7ff;
+  --color-full-contrast: #fff;
+  --color-no-contrast: #000;
+  --color-white: #fff;
+  --color-menu-item: #7b8ca0;
+  --color-headlines: #fff;
+  --color-text: #d6e3f5;
+  --color-primary-100: #06101f;
+  --color-primary-300: #3a76e6;
+  --color-primary-500: #1067f1;
+  --color-primary-700: #1c70f5;
+  --color-primary-900: #3885ff;
+  --color-success: #52c41a;
+  --color-warn: #e84b00;
+  --color-error: #e84749;
+  --color-strokes: #ffffff1a;
+  --color-alert-info-background: #3368ff14;
+  --color-alert-info-border: #3368ff6b;
+  --color-alert-title: #fff;
+  --color-alert-text: #fff;
+  --color-warning-background: #ffb75b17;
+  --color-warning-border: #996625;
+  --color-warning-title: #fff;
+  --color-warning-text: #fff;
+  --color-error-background: #5107115c;
+  --color-error-border: #8b2027;
+  --color-error-title: #ff1e22;
+  --color-error-text: #fff;
+}
 
-  --ifm-toc-border-color: #ffffff20;
-  --ifm-background-color: #101727;
+html[data-theme='dark'] {
+  --background-color: var(--color-primary-100);
+}
+
+html[data-theme='light'] {
+  --background-color: var(--color-white);
+}
+
+html, html[data-theme='dark'], html[data-theme='light'] {
+  --a-link: var(--color-primary-900);
+  --a-link-hover: var(--color-primary-700);
+  --footer-title-color: var(--color-full-contrast);
+  --footer-link-color: var(--color-menu-item);
+  --footer-link-color-hover: var(--color-full-contrast);
+  --ifm-color-primary: var(--color-primary-700);
+  --ifm-color-primary-dark: var(--color-primary-500);
+  --ifm-color-primary-darker: var(--color-primary-500);
+  --ifm-color-primary-darkest: var(--color-primary-500);
+  --ifm-color-primary-light: var(--color-primary-500);
+  --ifm-color-primary-lighter: var(--color-primary-500);
+  --ifm-color-primary-lightest: var(--color-primary-500);
+  --ifm-code-font-size: 95%;
+  --ifm-background-color: var(--background-color);
+  --ifm-navbar-background-color: var(--color-primary-100);
+  --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-hover-color: var(--a-link);
+  --ifm-footer-link-hover-color: var(--a-link-hover);
+  --ifm-menu-link-padding-horizontal: 2rem;
+  --ifm-h1-font-size: 2rem;
+  --ifm-link-color: var(--a-link);
+  --ifm-link-hiver-color: var(--a-link-hover);
+  --ifm-menu-color: var(--color-full-contrast);
+  --ifm-menu-color-active: var(--color-primary-900);
+  --ifm-breadcrumb-color-active: var(--a-link);
+  --ifm-toc-border-color: var(--color-strokes);
+  --ifm-breadcrumb-item-background-active: var(--color-alert-info-background);
+}
+
+* {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1, h2, h3 , h4, h5, h6 {
+  color: var(--color-headlines);
+}
+
+body {
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+code {
+  padding: 2px 4px;
+}
+
+.navbar__title {
+  display: none;
+}
+
+.navbar__logo {
+  margin-right: 24px;
+}
+
+.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
+  color: var(--a-link);
 }
 
 .markdown h1:first-child {
   --ifm-h1-font-size: 2rem;
+  margin-top: 8px;
 }
 
 .markdown > h2 {
@@ -50,8 +160,29 @@ nav.theme-doc-breadcrumbs {
   margin-bottom: 1.6rem;
 }
 
-.admonition-icon {
-  margin-right: 12px;
+/* Add sidebar drop shadow. */
+.sidebarViewport_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 24px;
+  z-index: 9999;
+}
+
+/* Fix cut off sidebar drop shadow. */
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module {
+  clip-path: inset(0px -9999px 0px 0px) !important;
+}
+
+/* Fix sidebar not growing to page end. */
+.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
+  flex-grow: 1;
+}
+
+.breadcrumbs__link {
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--color-menu-item);
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: none;
 }
 
 .docusaurus-highlight-code-line {
@@ -60,25 +191,48 @@ nav.theme-doc-breadcrumbs {
   padding: 0 var(--ifm-pre-padding);
 }
 
+.alert {
+  border: 1px solid var(--ifm-alert-border-color);
+  padding: 16px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  box-shadow: none;
+}
+
+.alert p {
+  line-height: 22px;
+  font-size: 14px;
+}
+
 .alert--info {
-  --ifm-alert-background-color: #0a396d;
-  --ifm-alert-border-color: #0a396d;
-  --ifm-color-info-contrast-foreground: #fff;
+  --ifm-alert-background-color: var(--color-alert-info-background);
+  --ifm-alert-border-color: var(--color-alert-info-border);
+  --ifm-alert-foreground-color: var(--color-alert-text);
 }
 
 .alert--warning {
-  --ifm-alert-background-color: #d86406;
-  --ifm-alert-border-color: #d86406;
-  --ifm-color-info-contrast-foreground: #fff;
-  --ifm-alert-foreground-color: #fff;
+  --ifm-alert-background-color: var(--color-warning-background);
+  --ifm-alert-border-color: var(--color-warning-border);
+  --ifm-alert-foreground-color: var(--color-warning-text);
 }
 
 .alert--info a {
-  color: #fff;
+  color: var(--a-link);
 }
 
 .alert--warning a {
-  color: #fff;
+  color: var(--a-link);
+}
+
+.alert a {
+  text-decoration: none;
+}
+
+/* Fix styling of info alert at site top that currently selected version is the next version. */
+.alert.theme-doc-version-banner {
+  font-size: 14px;
+  margin: 12px 0 48px !important;
 }
 
 .navbar {
@@ -108,7 +262,8 @@ nav.theme-doc-breadcrumbs {
 }
 
 .menu__link {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar-sidebar .menu__link:hover {
@@ -124,7 +279,7 @@ nav.theme-doc-breadcrumbs {
 }
 
 .navbar-sidebar .navbar-sidebar__back:hover {
-  background: #ffffff0d !important;
+  background: var(--background-color) !important;
 }
 
 .navbar__toggle {
@@ -132,14 +287,38 @@ nav.theme-doc-breadcrumbs {
 }
 
 .footer {
-  background-color: #101727;
-  border-top: 1px solid #ffffff20;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--color-strokes);
+}
+
+.footer__title {
+  color: var(--footer-title-color);
 }
 
 .footer__link-item {
   text-decoration: none !important;
+  color: var(--footer-link-color);
+  transition: none;
+}
+
+.footer__link-item:hover {
+  color: var(--footer-link-color-hover);
 }
 
 .footer__bottom {
   margin-top: 56px;
+}
+
+.footer__copyright {
+  color: var(--footer-link-color);
+}
+
+/* Hide version badge above site <h1>. */
+.theme-doc-version-badge {
+  display: none;
+}
+
+/* Fix border color of next/previos topic buttons. */
+.pagination-nav__link {
+  border: 1px solid var(--color-strokes);
 }

@@ -1,7 +1,7 @@
 ---
 title: Manage your translations
 sidebar_position: 8
-collapsed: false
+collapsed: true
 
 ---
 

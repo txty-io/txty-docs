@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Getting started
 slug: /
-collapsed: false
+collapsed: true
 ---
 
 

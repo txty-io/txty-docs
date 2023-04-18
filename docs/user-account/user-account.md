@@ -1,7 +1,7 @@
 ---
 title: User account
 sidebar_position: 8
-collapsed: false
+collapsed: true
 
 ---
 

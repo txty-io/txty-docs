@@ -1,7 +1,7 @@
 ---
 title: Import and export translations
 sidebar_position: 4
-collapsed: false
+collapsed: true
 
 ---
 
