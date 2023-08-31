@@ -17,7 +17,7 @@ git pull
 docker-compose build
 
 # Start the service which will update Texterify to the new version.
-docker-compose up --always-recreate-deps
+docker-compose up --always-recreate-deps --build
 
 # In case there are database changes apply them.
 docker-compose exec app bin/rails db:migrate db:seed
