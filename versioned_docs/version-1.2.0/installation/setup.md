@@ -40,7 +40,7 @@ echo SECRET_KEY_BASE=`openssl rand -hex 64` > secrets.env
 # Start the service.
 docker volume create --name=texterify-database
 docker volume create --name=texterify-assets
-docker-compose up --always-recreate-deps
+docker-compose up --always-recreate-deps --build
 
 # After everything has started create the database in another terminal.
 docker-compose exec app bin/rails db:create db:migrate db:seed
